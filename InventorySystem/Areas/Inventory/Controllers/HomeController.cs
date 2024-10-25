@@ -1,13 +1,14 @@
 using System.Diagnostics;
+using InventorySystem.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using InventorySystem.Models;
 
-namespace InventorySystem.Controllers;
-
+namespace InventorySystem.Areas.Inventory.Controllers;
+[Area("Inventory")]
 public class HomeController : Controller
 {
+    
     private readonly ILogger<HomeController> _logger;
-
+ 
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;

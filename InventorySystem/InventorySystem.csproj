@@ -18,6 +18,17 @@
 
     <ItemGroup>
       <ProjectReference Include="..\InventorySystem.DataAccess\InventorySystem.DataAccess.csproj" />
+      <ProjectReference Include="..\InventorySystem.Models\InventorySystem.Models.csproj" />
+      <ProjectReference Include="..\InventorySystem.Utils\InventorySystem.Utils.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Areas\Inventory\Views\Home\Index.cshtml" />
+      <AdditionalFiles Include="Areas\Inventory\Views\Home\Privacy.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\Admin\Controllers\" />
     </ItemGroup>
 
 </Project>
